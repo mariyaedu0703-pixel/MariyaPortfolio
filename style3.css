@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f9f9f9;
+    color:#333;
+}
+
+
+nav{
+    background:#111;
+    padding:15px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav ul li a:hover{
+    color:#00adb5;
+}
+
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(to right,#00adb5,#393e46);
+    color:white;
+}
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.hero button{
+    padding:10px 25px;
+    border:none;
+    background:white;
+    color:#00adb5;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+
+.about p{
+    max-width:700px;
+    line-height:1.7;
+}
+
+
+.skill{
+    margin-bottom:20px;
+}
+
+.progress{
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress div{
+    height:10px;
+    background:#00adb5;
+}
+
+
+.card{
+  background-color:whitesmoke;
+    background:#00adb5;
+  border:1px solid  ;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+    background:#00adb5;
+  box-shadow:0 0 20px  ;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:10px 20px;
+    border:none;
+    background:#00adb5;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+@media(max-width:768px){
+    nav ul{
+        display:none;
+    }
+}
